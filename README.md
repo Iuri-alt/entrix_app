@@ -1,11 +1,12 @@
 # Entrix — Controle Financeiro Inteligente
 
-<p align="center">
+<p align="Flex-start">
   <img src="lib/assets/logo.png" width="120"/>
 </p>
-<p align="center">
+<p align="Flex-start">
   <b>Gerencie seus gastos, visualize seu saldo e tome controle da sua vida financeira.</b>
 </p>
+---
 ---
 ## 🧠 O Problema
 Muita gente perde o controle financeiro por falta de organização simples e prática.
