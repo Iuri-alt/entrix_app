@@ -72,6 +72,9 @@ flutter:
 
   assets:
       - lib/assets/logo.png
+      - lib/assets/screenshots/Home.jpg
+      - lib/assets/screenshots/Login.jpg
+      - lib/assets/screenshots/Register.jpg
 
   #   - family: Schyler
   #     fonts:
