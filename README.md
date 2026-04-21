@@ -28,16 +28,15 @@ Com foco total em:
 * 📊 Visualização de saldo
 * 🗑️ Exclusão de transações
 * ☁️ Integração com API online
----
+
 ## 🛠️ Tecnologias
-<p align="center">
+<p align="flex-start">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg" height="40"/>
 </p>
----
 ## 🏗️ Arquitetura
 ```
 Flutter App (Frontend)
@@ -48,14 +47,11 @@ Flutter App (Frontend)
         ↓
    SQLite Database
 ```
----
-
 ## 🌐 API Online
 
 ```
 https://entrix-api.onrender.com
 ```
----
 ## 🧠 Aprendizados
 Durante o desenvolvimento, foram aplicados conceitos como:
 * Integração entre frontend e backend
@@ -63,19 +59,19 @@ Durante o desenvolvimento, foram aplicados conceitos como:
 * Autenticação com JWT
 * Persistência de dados
 * Deploy em nuvem (Render)
----
+
 ## 🔮 Futuras melhorias
 * 📊 Gráficos financeiros
 * 🔐 Criptografia de senha (bcrypt)
 * 👤 Multiusuário com autenticação real
 * ☁️ Banco de dados PostgreSQL
 * 📱 Melhorias de UI/UX
----
+
 ## 👨‍💻 Autor
 Feito por Iuri Antonio da Silva
----
+
 ## ⭐ Contribuição
 Sinta-se à vontade para contribuir ou sugerir melhorias!
----
+
 ## 💬 Status
 🚧 Projeto em evolução contínua
