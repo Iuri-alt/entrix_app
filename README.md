@@ -1,20 +1,19 @@
 # Entrix — Controle Financeiro Inteligente
 
 <p align="Flex-start">
-  <img src="lib/assets/logo.png" width="120"/>
+  <img src="lib/assets/logo.png" width="100"/>
 </p>
 <p align="Flex-start">
   <b>Gerencie seus gastos, visualize seu saldo e tome controle da sua vida financeira.</b>
 </p>
----
----
+
 ## 🧠 O Problema
 Muita gente perde o controle financeiro por falta de organização simples e prática.
 Apps existentes são:
 * ❌ complicados
 * ❌ poluídos
 * ❌ difíceis de usar no dia a dia
----
+
 ## 💡 A Solução
 O **Entrix** foi criado para ser:
 ✔ simples
@@ -22,15 +21,7 @@ O **Entrix** foi criado para ser:
 ✔ direto ao ponto
 Com foco total em:
 > **registrar, visualizar e controlar gastos sem dor de cabeça**
----
-## 📱 Preview do App
-<p align="center">
-  <img src="https://via.placeholder.com/250x500?text=Login+Screen" width="200"/>
-  <img src="https://via.placeholder.com/250x500?text=Home+Screen" width="200"/>
-  <img src="https://via.placeholder.com/250x500?text=Add+Expense" width="200"/>
-</p>
-> ⚠️ Dica: substitui essas imagens por prints reais do teu app depois 😏
----
+
 ## ⚙️ Funcionalidades
 * 🔐 Autenticação de usuário (Login / Cadastro)
 * 💰 Registro de despesas e receitas
