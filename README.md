@@ -37,6 +37,7 @@ Com foco total em:
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg" height="40"/>
 </p>
+
 ## 🏗️ Arquitetura
 ```
 Flutter App (Frontend)
@@ -47,8 +48,8 @@ Flutter App (Frontend)
         ↓
    SQLite Database
 ```
-## 🌐 API Online
 
+## 🌐 API Online
 ```
 https://entrix-api.onrender.com
 ```
