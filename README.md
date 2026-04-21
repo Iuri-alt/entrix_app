@@ -41,7 +41,7 @@ lib/
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Iuri (Big Boss)** 😎🔥
+Desenvolvido por Iuri Antonio da Silva
 
 ## Futuras melhorias
 
