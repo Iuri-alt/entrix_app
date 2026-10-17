@@ -1,7 +1,7 @@
 # Entrix — Controle Financeiro Inteligente
 
 <p align="Flex-start">
-  <img src="lib/assets/logo.png" width="100"/>
+  <img src="lib/assets/logo_mark.png" width="100"/>
 </p>
 <p align="Flex-start">
   <b>Gerencie seus gastos, visualize seu saldo e tome controle da sua vida financeira.</b>
