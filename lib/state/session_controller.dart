@@ -17,7 +17,15 @@ class SessionController extends ChangeNotifier {
   bool get expired => _expired;
 
   Future<void> restore() async {
-    _set(await _auth.hasSession() ? SessionStatus.signedIn : SessionStatus.signedOut);
+    bool hasSession;
+    try {
+      hasSession = await _auth.hasSession();
+    } catch (e) {
+      // Armazenamento local indisponível: pede login em vez de travar no splash.
+      debugPrint('Falha ao ler a sessão salva: $e');
+      hasSession = false;
+    }
+    _set(hasSession ? SessionStatus.signedIn : SessionStatus.signedOut);
   }
 
   Future<void> login(String email, String password) async {
@@ -29,7 +37,11 @@ class SessionController extends ChangeNotifier {
   Future<void> register(String email, String password) => _auth.register(email, password);
 
   Future<void> logout() async {
-    await _auth.logout();
+    try {
+      await _auth.logout();
+    } catch (e) {
+      debugPrint('Falha ao apagar a sessão salva: $e');
+    }
     _set(SessionStatus.signedOut);
   }
 

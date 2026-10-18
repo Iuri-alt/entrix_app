@@ -1,4 +1,5 @@
 import '../core/network/api_client.dart';
+import '../core/network/api_exception.dart';
 import '../core/storage/token_storage.dart';
 
 class AuthRepository {
@@ -15,7 +16,11 @@ class AuthRepository {
       body: {'email': email.trim(), 'password': password},
       auth: false,
     ) as Map<String, dynamic>;
-    await _tokens.write(data['access_token'] as String);
+    try {
+      await _tokens.write(data['access_token'] as String);
+    } catch (_) {
+      throw const ApiException('Não foi possível salvar a sessão neste aparelho.');
+    }
   }
 
   Future<void> register(String email, String password) => _api.post(

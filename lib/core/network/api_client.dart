@@ -93,13 +93,20 @@ class ApiClient {
       throw const ApiException('O servidor demorou para responder. Tente novamente.');
     } on http.ClientException {
       throw const ApiException('Sem conexão com o servidor. Verifique sua internet.');
+    } on Exception catch (e) {
+      // Ex.: falha de certificado (data do aparelho errada) ou erro de E/S.
+      throw ApiException('Falha de comunicação com o servidor ($e).');
     }
   }
 
   dynamic _decode(http.Response response) {
     _ensureSuccess(response);
     if (response.bodyBytes.isEmpty) return null;
-    return jsonDecode(utf8.decode(response.bodyBytes));
+    try {
+      return jsonDecode(utf8.decode(response.bodyBytes));
+    } on FormatException {
+      throw const ApiException('Resposta inválida do servidor. Tente novamente em instantes.');
+    }
   }
 
   void _ensureSuccess(http.Response response) {

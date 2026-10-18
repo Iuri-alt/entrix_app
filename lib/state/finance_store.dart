@@ -59,6 +59,10 @@ class FinanceStore extends ChangeNotifier {
     } on ApiException catch (e) {
       _error = e.message;
       _status = LoadStatus.error;
+    } catch (e) {
+      // Dados num formato inesperado: mostra o erro em vez de carregar para sempre.
+      _error = 'Não foi possível ler os dados recebidos ($e).';
+      _status = LoadStatus.error;
     }
     _changed();
   }

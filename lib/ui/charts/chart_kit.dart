@@ -57,7 +57,8 @@ abstract final class ChartKit {
 
   /// Arredonda o topo do eixo para um valor "redondo".
   static double niceMax(double value) {
-    if (value <= 0) return 1;
+    // Sem dados: escala inteira (0–100) em vez de rótulos fracionários.
+    if (value <= 0) return 100;
     final magnitude = _pow10((value).toStringAsFixed(0).length - 1);
     final step = magnitude / 2;
     return ((value / step).ceil() * step).toDouble();
